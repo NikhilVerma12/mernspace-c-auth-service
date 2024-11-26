@@ -3,6 +3,6 @@ function welcome(name: string) {
     name: "Welcome",
   };
   const u1 = user.name;
-  return { name, u1 };
+  return name + u1;
 }
 welcome("John Doe");
