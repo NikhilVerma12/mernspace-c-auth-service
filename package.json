@@ -33,9 +33,11 @@
   },
   "dependencies": {
     "@types/express": "^5.0.0",
+    "@types/http-errors": "^2.0.4",
     "@types/winston": "^2.4.4",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "http-errors": "^2.0.0",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "winston": "^3.17.0"
