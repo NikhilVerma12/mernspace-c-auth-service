@@ -68,7 +68,7 @@ describe("POST /auth/register", () => {
       expect(users[0].email).toBe(userData.email);
     });
   });
-
+  it("should return an id of created user", async () => {});
   describe("Fields are missing", () => {
     // TODO: Add tests for missing fields scenarios
   });
