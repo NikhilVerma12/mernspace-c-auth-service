@@ -83,13 +83,46 @@ describe("POST /auth/register", () => {
       const userRepository = connection.getRepository(User);
       const users = await userRepository.find();
       console.log(users);
-
       // Check that at least one user exists
       expect(users.length).toBeGreaterThan(0);
 
       // Check the first user has the "role" property and its value is "customer"
       expect(users[0]).toHaveProperty("role");
       expect(users[0].role).toBe(Roles.CUSTOMER);
+    });
+    it("should store hashed password in the database", async () => {
+      // Arrange
+      const userData = {
+        firstName: "nikhil",
+        lastName: "verma",
+        email: "john.doe@example.com",
+        password: "password123",
+      };
+      // Act
+      await request(app).post("/auth/register").send(userData);
+      // Assert
+      const userRepository = connection.getRepository(User);
+      const users = await userRepository.find();
+      expect(users[0].password).not.toBe(userData.password);
+      expect(users[0].password).toHaveLength(60);
+      expect(users[0].password).toMatch(/^\$2b\$\d+\$/); // (/^\$2b\$\d+\$/) regex checking the hashed password starting code ($2b$10$)
+    });
+    it("should return 400 status code when email is already exists", async () => {
+      // Arrange
+      const userData = {
+        firstName: "nikhil",
+        lastName: "verma",
+        email: "john.doe@example.com",
+        password: "password123",
+      };
+      const userRepository = connection.getRepository(User);
+      await userRepository.save({ ...userData, role: Roles.CUSTOMER });
+      // Act
+      const response = await request(app).post("/auth/register").send(userData);
+      const users = await userRepository.find();
+      //Assert
+      expect(response.statusCode).toBe(400);
+      expect(users).toHaveLength(1);
     });
   });
   it("should return an id of created user", async () => {});

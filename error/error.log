@@ -1,0 +1,6 @@
+{
+  message: 'Invalid request: /favicon.ico',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-19T08:21:50.349Z'
+}
