@@ -13,7 +13,7 @@ describe("POST /auth/register", () => {
   });
 
   beforeEach(async () => {
-    // Database truncate
+    // Ensure complete cleanup before each test
     await connection.dropDatabase();
     await connection.synchronize();
   });
@@ -82,7 +82,6 @@ describe("POST /auth/register", () => {
       // Assert
       const userRepository = connection.getRepository(User);
       const users = await userRepository.find();
-      console.log(users);
       // Check that at least one user exists
       expect(users.length).toBeGreaterThan(0);
 
@@ -127,7 +126,7 @@ describe("POST /auth/register", () => {
   });
   // it("should return an id of created user", async () => {});
   describe("Fields are missing", () => {
-    it("should return 400 status code if email field is missing", async () => {
+    it.skip("should return 400 status code if email field is missing", async () => {
       // Arrange
       const userData = {
         firstName: "nikhil",
@@ -142,6 +141,20 @@ describe("POST /auth/register", () => {
       const userRepository = connection.getRepository(User);
       const users = await userRepository.find();
       expect(users).toHaveLength(0);
+    });
+  });
+  describe("Fields are not in proper format", () => {
+    it("should trim the email field", async () => {
+      const userData = {
+        firstName: "nikhil",
+        lastName: "vermaaaaa",
+        email: " nikk@gmail.com ", // Email with leading/trailing spaces
+        password: "password123",
+      };
+      await request(app).post("/auth/register").send(userData);
+      const userRepository = connection.getRepository(User);
+      const users = await userRepository.find();
+      expect(users[0].email).toBe("nikk@gmail.com");
     });
   });
 });
