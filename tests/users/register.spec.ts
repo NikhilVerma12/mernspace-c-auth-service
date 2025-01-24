@@ -119,6 +119,7 @@ describe("POST /auth/register", () => {
       // Act
       const response = await request(app).post("/auth/register").send(userData);
       const users = await userRepository.find();
+      console.log(users);
       //Assert
       expect(response.statusCode).toBe(400);
       expect(users).toHaveLength(1);
@@ -136,15 +137,35 @@ describe("POST /auth/register", () => {
       };
       // Act
       const response = await request(app).post("/auth/register").send(userData);
+      const userRepository = connection.getRepository(User);
+      const users = await userRepository.find();
+      const user = users[0];
       //Assert
+      expect(response.statusCode).toBe(400);
+      expect(user.email).toHaveLength(0);
+    });
+    it("should return 400 status code if firstName is missing", async () => {
+      // Arrange
+      const userData = {
+        firstName: "",
+        lastName: "K",
+        email: "rakesh@mern.space",
+        password: "password",
+      };
+      // Act
+      const response = await request(app).post("/auth/register").send(userData);
+
+      // Assert
       expect(response.statusCode).toBe(400);
       const userRepository = connection.getRepository(User);
       const users = await userRepository.find();
       expect(users).toHaveLength(0);
     });
+    it.skip("should return 400 status code if lastName field is missing", async () => {});
+    it.skip("should return 400 status code if password field is missing", async () => {});
   });
   describe("Fields are not in proper format", () => {
-    it("should trim the email field", async () => {
+    it.skip("should trim the email field", async () => {
       const userData = {
         firstName: "nikhil",
         lastName: "vermaaaaa",
@@ -156,5 +177,10 @@ describe("POST /auth/register", () => {
       const users = await userRepository.find();
       expect(users[0].email).toBe("nikk@gmail.com");
     });
+    it.skip("should return 400 status code if email is not a valid email", async () => {});
+    it.skip("should return 400 status code if password is less than 8 characters", async () => {});
+  });
+  describe("Error Messages in arrays", () => {
+    it.skip("should return an array of error messages if email is missing", async () => {});
   });
 });
