@@ -4,6 +4,7 @@ node_modules/
 build/
 tmp/
 temp/
+certs/
 
 .env.dev
 .env.example
