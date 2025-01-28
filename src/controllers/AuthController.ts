@@ -7,7 +7,7 @@ import { Logger } from "winston";
 import { validationResult } from "express-validator";
 import { JwtPayload, sign } from "jsonwebtoken";
 import createHttpError from "http-errors";
-import { User } from "../entity/User";
+import { Roles } from "../constants";
 
 export class AuthController {
   constructor(
@@ -31,16 +31,15 @@ export class AuthController {
       email,
       password: "********************", // Mask sensitive information
     });
-
     try {
       // Create a new user
-      const user: User = await this.userService.create({
+      const user = await this.userService.create({
         firstName,
         lastName,
         email,
         password,
+        role: Roles.CUSTOMER,
       });
-
       this.logger.info("User has been registered", { id: user });
       let privateKey: Buffer;
       try {

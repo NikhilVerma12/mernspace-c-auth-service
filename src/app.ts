@@ -2,7 +2,7 @@ import "reflect-metadata";
 import logger from "./config/logger";
 import morgan from "morgan";
 import authRouter from "./routes/auth";
-import express, { Express } from "express";
+import express, { Express, NextFunction, Request, Response } from "express";
 
 const app: Express = express();
 
@@ -15,7 +15,11 @@ app.use(morgan("dev")); // 'dev' gives concise colorful output in the terminal
 app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
-
+app.use((req: Request, res: Response, next: NextFunction) => {
+  const origin = req.get("origin"); // or req.headers.origin
+  console.log("Request origin:", origin);
+  next();
+});
 // Auth routes
 app.use("/auth", authRouter);
 
