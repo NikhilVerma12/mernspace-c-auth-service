@@ -25,22 +25,23 @@ describe("POST /auth/register", () => {
 
   describe("Given all fields", () => {
     it("should return the 201 status code", async () => {
+      // Arrange
       const userData = {
-        firstName: "nikhil",
-        lastName: "verma",
-        email: "john.doe@example.com",
-        password: "password123",
+        firstName: "Nikhil",
+        lastName: "Verma",
+        email: "nikhil@gmail.com",
+        password: "password",
       };
-
+      // Act
       const response = await request(app).post("/auth/register").send(userData);
-
+      // Assert
       expect(response.statusCode).toBe(201);
     });
 
     it("should return valid json response", async () => {
       const userData = {
-        firstName: "dataUserName",
-        lastName: "dataUserLastName",
+        firstName: "nikk",
+        lastName: "verma",
         email: "john.doe@axc.com",
         password: "@axcr685rc34",
       };
@@ -120,7 +121,6 @@ describe("POST /auth/register", () => {
       // Act
       const response = await request(app).post("/auth/register").send(userData);
       const users = await userRepository.find();
-      console.log(users);
       //Assert
       expect(response.statusCode).toBe(400);
       expect(users).toHaveLength(1);
@@ -170,7 +170,7 @@ describe("POST /auth/register", () => {
   });
   // it("should return an id of created user", async () => {});
   describe("Fields are missing", () => {
-    it.skip("should return 400 status code if email field is missing", async () => {
+    it("should return 400 status code if email field is missing", async () => {
       // Arrange
       const userData = {
         firstName: "nikhil",
@@ -182,10 +182,9 @@ describe("POST /auth/register", () => {
       const response = await request(app).post("/auth/register").send(userData);
       const userRepository = connection.getRepository(User);
       const users = await userRepository.find();
-      const user = users[0];
       //Assert
       expect(response.statusCode).toBe(400);
-      expect(user.email).toHaveLength(0);
+      expect(users).toHaveLength(0);
     });
     it("should return 400 status code if firstName is missing", async () => {
       // Arrange
@@ -238,7 +237,7 @@ describe("POST /auth/register", () => {
     });
   });
   describe("Fields are not in proper format", () => {
-    it.skip("should trim the email field", async () => {
+    it("should trim the email field", async () => {
       const userData = {
         firstName: "nikhil",
         lastName: "vermaaaaa",

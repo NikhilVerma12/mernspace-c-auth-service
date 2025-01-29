@@ -15,16 +15,12 @@ export class AuthController {
     private logger: Logger,
   ) {}
 
-  async register(
-    req: RegisterUserRequest,
-    res: Response,
-    next: NextFunction,
-  ): Promise<void> {
-    const { firstName, lastName, email, password } = req.body;
+  async register(req: RegisterUserRequest, res: Response, next: NextFunction) {
     const result = validationResult(req);
     if (!result.isEmpty()) {
-      res.status(400).json({ errors: result.array() });
+      return res.status(400).json({ errors: result.array() });
     }
+    const { firstName, lastName, email, password } = req.body;
     this.logger.debug("New request to register a user", {
       firstName,
       lastName,
@@ -40,7 +36,7 @@ export class AuthController {
         password,
         role: Roles.CUSTOMER,
       });
-      this.logger.info("User has been registered", { id: user });
+      this.logger.info("User has been registered", { id: user.id });
       let privateKey: Buffer;
       try {
         privateKey = fs.readFileSync(
@@ -76,7 +72,6 @@ export class AuthController {
       });
       res.status(201).json({ id: user });
     } catch (err) {
-      // Forward error to error-handling middleware
       next(err);
     }
   }

@@ -4,3 +4,189 @@
   service: 'auth-service',
   timestamp: '2025-01-19T08:21:50.349Z'
 }
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:22.966Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.035Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.093Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.153Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.213Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.233Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.285Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:36:23.373Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:36.820Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:36.889Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:36.950Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:37.014Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:37.073Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:37.090Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:38:37.179Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:39.785Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:39.855Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:39.912Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:39.973Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:40.032Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:40.048Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:40.101Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:41:40.188Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.460Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.519Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.571Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.624Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.679Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.696Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.751Z'
+}
+{
+  message: 'secretOrPrivateKey has a minimum key size of 2048 bits for RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-29T10:44:52.838Z'
+}

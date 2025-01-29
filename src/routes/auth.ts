@@ -1,4 +1,9 @@
-import express, { NextFunction, Request, Response } from "express";
+import express, {
+  NextFunction,
+  Request,
+  RequestHandler,
+  Response,
+} from "express";
 import { AuthController } from "../controllers/AuthController";
 import { UserService } from "../services/UserService";
 import { AppDataSource } from "../config/data-source";
@@ -11,11 +16,11 @@ const userRepository = AppDataSource.getRepository(User);
 const userService = new UserService(userRepository);
 const authController = new AuthController(userService, logger);
 
-router.post(
-  "/register",
-  registerValidators,
-  (req: Request, res: Response, next: NextFunction) =>
-    authController.register(req, res, next),
-);
-
+router.post("/register", registerValidators, (async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  await authController.register(req, res, next);
+}) as RequestHandler);
 export default router;
