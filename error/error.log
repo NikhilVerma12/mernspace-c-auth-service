@@ -1210,3 +1210,645 @@
   service: 'auth-service',
   timestamp: '2025-01-30T09:23:14.722Z'
 }
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:34:32.767Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:48.739Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:48.808Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:48.868Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:48.932Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:48.989Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:49.006Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:49.058Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:35:49.148Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.118Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.188Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.250Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.312Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.373Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.394Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.450Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:37:07.541Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:40:36.612Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.656Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.729Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.790Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.853Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.916Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.934Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:28.990Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:45:29.084Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.290Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.361Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.424Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.484Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.543Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.563Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.617Z'
+}
+{
+  message: 'secretOrPrivateKey must have a value',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:52:20.705Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.576Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.647Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.711Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.775Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.839Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.859Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:49.913Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:53:50.004Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.388Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.456Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.521Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.586Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.647Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.665Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.720Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:55:59.813Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.051Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.121Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.183Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.246Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.303Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.322Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.376Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:01.465Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:38.927Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:38.998Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.059Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.123Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.185Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.201Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.256Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T09:57:39.345Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:43.822Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:43.894Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:43.951Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:44.010Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:44.065Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:44.077Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:44.131Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:44.227Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.211Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.282Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.345Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.408Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.472Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.489Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.547Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:00:48.636Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.202Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.276Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.338Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.400Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.464Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.484Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.542Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:01:27.636Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.329Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.398Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.457Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.522Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.585Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.600Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.654Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:05:59.741Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:55.802Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:55.877Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:55.933Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:55.997Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:56.058Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:56.075Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:56.132Z'
+}
+{
+  message: 'secretOrPrivateKey must be an asymmetric key when using RS256',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:06:56.228Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-01-30T10:09:59.589Z'
+}

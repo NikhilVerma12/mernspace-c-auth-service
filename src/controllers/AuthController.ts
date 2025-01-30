@@ -8,6 +8,7 @@ import { validationResult } from "express-validator";
 import { JwtPayload, sign } from "jsonwebtoken";
 import createHttpError from "http-errors";
 import { Roles } from "../constants";
+import { Config } from "../config";
 
 export class AuthController {
   constructor(
@@ -57,7 +58,11 @@ export class AuthController {
         expiresIn: "1h",
         issuer: "auth-service",
       });
-      const refreshToken = "ueifhu4fbnufviuer";
+      const refreshToken = sign(payload, privateKey, {
+        algorithm: "RS256",
+        expiresIn: "1y",
+        issuer: "auth-service",
+      });
       res.cookie("accessToken", accessToken, {
         domain: "localhost",
         sameSite: "strict",
