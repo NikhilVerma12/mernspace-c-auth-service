@@ -2,7 +2,7 @@ import crypto from "crypto";
 import fs from "fs";
 
 const { privateKey, publicKey } = crypto.generateKeyPairSync("rsa", {
-  modulusLength: 2028,
+  modulusLength: 2048,
   publicKeyEncoding: {
     type: "pkcs1",
     format: "pem",
