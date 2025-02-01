@@ -2026,3 +2026,33 @@
   service: 'auth-service',
   timestamp: '2025-02-01T10:01:53.808Z'
 }
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-01T10:10:15.484Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-01T10:13:20.031Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-01T10:26:47.465Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-01T10:30:36.763Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-01T10:34:18.988Z'
+}

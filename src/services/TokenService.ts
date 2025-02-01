@@ -2,8 +2,12 @@ import { JwtPayload, sign } from "jsonwebtoken";
 import fs from "fs";
 import path from "path";
 import createHttpError from "http-errors";
+import { RefreshToken } from "../entity/RefreshToken";
+import { User } from "../entity/User";
+import { Repository } from "typeorm";
 
 export class TokenService {
+  constructor(private refreshTokenRepository: Repository<RefreshToken>) {}
   tokenPrivateKey(): Buffer | string {
     try {
       return fs.readFileSync(
@@ -29,6 +33,14 @@ export class TokenService {
       expiresIn: "1y",
       issuer: "auth-service",
       jwtid: String(payload.id),
+    });
+  }
+  async persistRefreshToken(user: User) {
+    const MS_IN_YEAR = 1000 * 60 * 60 * 24 * 365; // 1Y -> (Leap year)
+
+    return await this.refreshTokenRepository.save({
+      user: user,
+      expiresAt: new Date(Date.now() + MS_IN_YEAR),
     });
   }
 }
