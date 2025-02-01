@@ -1,20 +1,19 @@
-import fs from "fs";
-import path from "path";
 import { Response, NextFunction } from "express";
 import { RegisterUserRequest } from "../types";
 import { UserService } from "../services/UserService";
 import { Logger } from "winston";
 import { validationResult } from "express-validator";
-import { JwtPayload, sign } from "jsonwebtoken";
-import createHttpError from "http-errors";
+import { JwtPayload } from "jsonwebtoken";
 import { Roles } from "../constants";
 import { AppDataSource } from "../config/data-source";
 import { RefreshToken } from "../entity/RefreshToken";
+import { TokenService } from "../services/TokenService";
 
 export class AuthController {
   constructor(
     private userService: UserService,
     private logger: Logger,
+    private tokenService: TokenService,
   ) {}
 
   async register(req: RegisterUserRequest, res: Response, next: NextFunction) {
@@ -39,26 +38,11 @@ export class AuthController {
         role: Roles.CUSTOMER,
       });
       this.logger.info("User has been registered", { id: user.id });
-      let privateKey: Buffer;
-      try {
-        privateKey = fs.readFileSync(
-          path.join(__dirname, "../../certs/private.pem"),
-        );
-      } catch (e) {
-        console.error(e);
-        const err = createHttpError(500, "Couldn't read private key");
-        next(err);
-        return;
-      }
       const payload: JwtPayload = {
         sub: String(user.id),
         role: user.role,
       };
-      const accessToken = sign(payload, privateKey, {
-        algorithm: "RS256",
-        expiresIn: "1h",
-        issuer: "auth-service",
-      });
+
       //Persist the refresh token
       const MS_IN_YEAR = 1000 * 60 * 60 * 24 * 365;
       const refreshTokenRepository = AppDataSource.getRepository(RefreshToken);
@@ -66,25 +50,27 @@ export class AuthController {
         user: user,
         expiresAt: new Date(Date.now() + MS_IN_YEAR),
       });
-      const refreshToken = sign(payload, privateKey, {
-        algorithm: "RS256",
-        expiresIn: "1y",
-        issuer: "auth-service",
-        jwtid: String(newRefreshToken.id),
+      const refreshToken = this.tokenService.generateRefreshToken({
+        ...payload,
+        id: String(newRefreshToken.id),
       });
-      res.cookie("accessToken", accessToken, {
-        domain: "localhost",
-        sameSite: "strict",
-        maxAge: 1000 * 60 * 60, // 1h
-        httpOnly: true,
-      });
+      res.cookie(
+        "accessToken",
+        this.tokenService.generateAccessToken(payload),
+        {
+          domain: "localhost",
+          sameSite: "strict",
+          maxAge: 1000 * 60 * 60, // 1h
+          httpOnly: true,
+        },
+      );
       res.cookie("refreshToken", refreshToken, {
         domain: "localhost",
         sameSite: "strict",
         maxAge: 1000 * 60 * 60 * 24 * 365, // 1h
         httpOnly: true,
       });
-      console.log(accessToken);
+      console.log(this.tokenService.generateAccessToken(payload));
       res.status(201).json({ id: user.id });
     } catch (err) {
       next(err);
