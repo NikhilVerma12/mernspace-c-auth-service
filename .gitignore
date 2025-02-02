@@ -5,6 +5,7 @@ build/
 tmp/
 temp/
 certs/
+error/
 
 .env.dev
 .env.example

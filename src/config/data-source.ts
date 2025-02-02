@@ -11,8 +11,7 @@ export const AppDataSource = new DataSource({
   username: Config.DB_USERNAME,
   password: Config.DB_PASSWORD,
   database: Config.DB_NAME,
-  // always keep it false
-  synchronize: false,
+  synchronize: true, //always keep it false in Production
   logging: false,
   entities: [User, RefreshToken], //Register Entities
   migrations: [],
