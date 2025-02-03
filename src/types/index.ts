@@ -7,7 +7,6 @@ export interface UserData {
   password: string;
   role: string;
 }
-
 export interface RegisterUserRequest extends Request {
   body: UserData;
 }

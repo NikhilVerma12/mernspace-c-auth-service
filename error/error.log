@@ -2639,3 +2639,165 @@
   service: 'auth-service',
   timestamp: '2025-02-03T10:55:25.642Z'
 }
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:02:29.358Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:40:38.723Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:41:26.043Z'
+}
+{
+  message: 'insert or update on table "refresh_token" violates foreign key constraint "FK_8e913e288156c133999341156ad"',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:41:58.265Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:41:58.429Z'
+}
+{
+  message: 'insert or update on table "refresh_token" violates foreign key constraint "FK_8e913e288156c133999341156ad"',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:47:03.369Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:47:03.514Z'
+}
+{
+  message: 'insert or update on table "refresh_token" violates foreign key constraint "FK_8e913e288156c133999341156ad"',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:47:41.549Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:47:41.710Z'
+}
+{
+  message: 'Email or password does not match',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:51:43.662Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:51:43.781Z'
+}
+{
+  message: 'insert or update on table "refresh_token" violates foreign key constraint "FK_8e913e288156c133999341156ad"',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:54:14.830Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:54:15.015Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:56:17.320Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T11:58:31.428Z'
+}
+{
+  message: 'insert or update on table "refresh_token" violates foreign key constraint "FK_8e913e288156c133999341156ad"',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:00:03.168Z'
+}
+{
+  message: 'Email or password does not match',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:00:03.286Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:00:03.344Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:00:48.484Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:03:32.712Z'
+}
+{
+  message: 'Failed to store the data in the database',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:05:12.563Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:05:12.848Z'
+}
+{
+  message: 'Failed to store the data in the database',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:07:22.059Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:07:22.357Z'
+}
+{
+  message: 'Failed to store the data in the database',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:08:10.472Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:08:10.756Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:08:26.287Z'
+}
