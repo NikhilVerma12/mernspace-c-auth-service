@@ -2819,3 +2819,9 @@
   service: 'auth-service',
   timestamp: '2025-02-03T12:14:33.759Z'
 }
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T12:23:00.912Z'
+}
