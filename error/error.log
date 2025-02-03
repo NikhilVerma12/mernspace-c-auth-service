@@ -2297,3 +2297,345 @@
   service: 'auth-service',
   timestamp: '2025-02-02T13:39:11.068Z'
 }
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-02T13:43:01.185Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T09:57:46.600Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:01:50.937Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:05:10.111Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:10:06.667Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:12:25.497Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:13:09.493Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:19:19.178Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:20:01.144Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:20:31.587Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:20:51.048Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:21:28.606Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:23:21.813Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:23:22.117Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:23:22.117Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:15.973Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:16.267Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:16.268Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:17.440Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:17.751Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:17.751Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:18.889Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:19.192Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:19.192Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:20.353Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:20.656Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:20.657Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:48.837Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:49.145Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:24:49.145Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:18.444Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:18.748Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:18.748Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:44.874Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:45.186Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:25:45.186Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:26:07.373Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:31:46.746Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:32:09.468Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:35:20.307Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:37:34.265Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:37:41.817Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:38:45.771Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:41:27.645Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:41:27.646Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:41:27.865Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:41:52.794Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:42:23.732Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:42:23.734Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:00.015Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:00.016Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:05.668Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:05.668Z'
+}
+{
+  message: 'Invalid request: /auth/login',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:06.681Z'
+}
+{
+  message: 'Invalid request',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:44:06.682Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:47:04.856Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-03T10:55:25.642Z'
+}

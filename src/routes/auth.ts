@@ -12,6 +12,7 @@ import logger from "../config/logger";
 import registerValidators from "../validators/register-validators";
 import { TokenService } from "../services/TokenService";
 import { RefreshToken } from "../entity/RefreshToken";
+// import loginValidators from "../validators/login-validators";
 
 const router = express.Router();
 const userRepository = AppDataSource.getRepository(User);
@@ -27,4 +28,5 @@ router.post("/register", registerValidators, (async (
 ) => {
   await authController.register(req, res, next);
 }) as RequestHandler);
+
 export default router;
