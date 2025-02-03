@@ -69,7 +69,7 @@ describe("POST /auth/login", () => {
       console.log("Login response:", loginResponse.body);
 
       // ✅ Fix: Expect successful login
-      expect(loginResponse.statusCode).toBe(201);
+      expect(loginResponse.statusCode).toBe(200);
       expect(loginResponse.body).toHaveProperty("id");
     });
   });
