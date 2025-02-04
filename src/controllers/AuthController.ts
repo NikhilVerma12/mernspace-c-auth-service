@@ -1,4 +1,4 @@
-import { Response, NextFunction } from "express";
+import { Response, NextFunction, Request } from "express";
 import { RegisterUserRequest } from "../types";
 import { UserService } from "../services/UserService";
 import { Logger } from "winston";
@@ -130,5 +130,8 @@ export class AuthController {
     } catch (err) {
       next(err);
     }
+  }
+  async self(req: Request, res: Response) {
+    res.json({});
   }
 }
