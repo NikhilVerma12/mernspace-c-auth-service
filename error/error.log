@@ -2957,3 +2957,59 @@
   service: 'auth-service',
   timestamp: '2025-02-04T09:31:58.505Z'
 }
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-05T09:13:59.288Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-05T09:17:57.067Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-05T09:18:28.656Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-05T09:20:04.504Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-05T09:20:18.706Z'
+}
+{
+  message: 'Invalid request: /favicon.ico',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-05T09:24:57.010Z'
+}
