@@ -64,7 +64,7 @@ export class AuthController {
         maxAge: 1000 * 60 * 60 * 24 * 365, // 1h
         httpOnly: true,
       });
-      console.log(this.tokenService.generateAccessToken(payload));
+      // console.log(this.tokenService.generateAccessToken(payload));
       res.status(201).json({ id: user.id });
     } catch (err) {
       next(err);
@@ -84,7 +84,7 @@ export class AuthController {
       // Check if username (email) exists in database
       // Compare password
       // Generate tokens
-      // Add tokens to Cokkies
+      // Add tokens to Cookies
       // Return the response (id)
 
       const user = await this.userService.findByEmail(email);
@@ -132,7 +132,25 @@ export class AuthController {
     }
   }
   async self(req: AuthRequest, res: Response) {
-    const user = await this.userService.findById(Number(req.auth.sub));
-    res.json(user);
+    try {
+      console.log("User ID from JWT:", req.auth.sub); // ✅ Debug JWT payload
+
+      if (!req.auth.sub) {
+        return res
+          .status(401)
+          .json({ error: "Unauthorized: No user ID in token" });
+      }
+
+      const user = await this.userService.findById(Number(req.auth.sub));
+
+      if (!user) {
+        return res.status(404).json({ error: "User not found" }); // ✅ Handle missing user
+      }
+
+      res.json(user);
+    } catch (error) {
+      console.error("Error in self():", error); // ✅ Log server errors
+      res.status(500).json({ error: "Internal Server Error" });
+    }
   }
 }

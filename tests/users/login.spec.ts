@@ -50,7 +50,7 @@ describe("POST /auth/login", () => {
       });
 
       // Debug: Check if user is saved
-      console.log("User created in DB:", user);
+      // console.log("User created in DB:", user);
 
       // Ensure the user is actually saved in DB before login
       expect(user).not.toBeNull();
@@ -66,7 +66,7 @@ describe("POST /auth/login", () => {
       });
 
       // Debugging output
-      console.log("Login response:", loginResponse.body);
+      // console.log("Login response:", loginResponse.body);
 
       // ✅ Fix: Expect successful login
       expect(loginResponse.statusCode).toBe(200);

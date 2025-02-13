@@ -154,7 +154,7 @@ describe("POST /auth/register", () => {
           refreshToken = cookie.split(";")[0].split("=")[1];
         }
       });
-      console.log(accessToken, refreshToken);
+      // console.log(accessToken, refreshToken);
       expect(accessToken).not.toBeNull();
       expect(refreshToken).not.toBeNull();
 

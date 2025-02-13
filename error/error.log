@@ -3013,3 +3013,29 @@
   service: 'auth-service',
   timestamp: '2025-02-05T09:24:57.010Z'
 }
+{
+  message: 'Invalid request: /favicon.ico',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-09T15:15:58.847Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-13T15:11:13.824Z'
+}
+{
+  service: 'auth-service',
+  code: 'ECONNREFUSED',
+  level: 'error',
+  message: 'Error starting the server:',
+  stack: 'AggregateError\n' +
+    '    at internalConnectMultiple (node:net:1128:18)\n' +
+    '    at afterConnectMultiple (node:net:1693:7)',
+  timestamp: '2025-02-13T15:12:39.272Z'
+}
