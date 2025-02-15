@@ -492,3 +492,39 @@
   service: 'auth-service',
   timestamp: '2025-02-15T01:51:41.918Z'
 }
+{
+  message: 'No authorization token was found',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:19:50.705Z'
+}
+{
+  message: 'An unknown error occurred',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:19:51.776Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:19:54.221Z'
+}
+{
+  message: 'No authorization token was found',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:26:36.232Z'
+}
+{
+  message: 'An unknown error occurred',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:26:37.302Z'
+}
+{
+  message: 'Email is already exists!',
+  level: 'error',
+  service: 'auth-service',
+  timestamp: '2025-02-15T02:26:39.526Z'
+}

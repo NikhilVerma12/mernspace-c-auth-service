@@ -32,7 +32,14 @@ describe("GET /auth/self", () => {
 
   describe("Login Endpoint Tests", () => {
     it("should return the 200 status code", async () => {
-      const response = await request(app).get("/auth/self").send();
+      const accessToken = jwks.token({
+        sub: "1",
+        role: Roles.CUSTOMER,
+      });
+      const response = await request(app)
+        .get("/auth/self")
+        .set("Cookie", [`accessToken=${accessToken}`])
+        .send();
       expect(response.statusCode).toBe(200);
     });
     it("should return the user data", async () => {
