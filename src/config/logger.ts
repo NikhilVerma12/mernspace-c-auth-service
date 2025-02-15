@@ -21,10 +21,10 @@ const logger = winston.createLogger({
       ),
       silent: Config.NODE_ENV === "development",
     }),
-    // new winston.transports.Console({
-    //   level: "info",
-    //   silent: Config.NODE_ENV === "development",
-    // }),
+    new winston.transports.Console({
+      level: "info",
+      silent: Config.NODE_ENV === "development",
+    }),
   ],
 });
 export default logger;
