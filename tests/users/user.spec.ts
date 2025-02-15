@@ -11,55 +11,28 @@ describe("GET /auth/self", () => {
   let jwks: ReturnType<typeof createJWKSMock>;
 
   beforeAll(async () => {
-    try {
-      jwks = createJWKSMock("http://localhost:5501");
-      connection = await AppDataSource.initialize();
-      console.log("Database connection initialized");
-    } catch (error) {
-      console.error("Database connection failed:", error);
-    }
+    jwks = createJWKSMock("http://localhost:5501");
+    connection = await AppDataSource.initialize();
   });
 
   beforeEach(async () => {
     jwks.start();
-
-    if (!connection) {
-      throw new Error("Database connection is not initialized.");
-    }
-
+    // ✅ Fix: Ensure proper cleanup before each test
     await connection.dropDatabase();
-    await new Promise((resolve) => setTimeout(resolve, 1000)); // Ensure DB cleanup completes
-    await connection.runMigrations();
+    await new Promise((resolve) => setTimeout(resolve, 1000)); // Ensures DB cleanup is fully completed
+    await connection.synchronize(); // If using migrations, replace with runMigrations()
+    // await connection.runMigrations(); // Alternative fix
   });
   afterEach(() => {
     jwks.stop();
   });
   afterAll(async () => {
-    if (connection) {
-      await connection.destroy();
-      console.log("Database connection closed");
-    } else {
-      console.warn("No database connection to destroy");
-    }
+    await connection.destroy();
   });
 
   describe("Login Endpoint Tests", () => {
     it("should return the 200 status code", async () => {
-      const accessToken = jwks.token({
-        sub: "1",
-        role: "CUSTOMER",
-      });
-
-      console.log("Generated Token:", accessToken); // ✅ Check if token is valid
-      console.log("Sending Request with Headers:", {
-        Cookie: `accessToken=${accessToken}`,
-      });
-      const response = await request(app)
-        .get("/auth/self")
-        .set("Cookie", [`accessToken=${accessToken};`])
-        .send();
-
-      console.log("Response Body:", response.body);
+      const response = await request(app).get("/auth/self").send();
       expect(response.statusCode).toBe(200);
     });
     it("should return the user data", async () => {

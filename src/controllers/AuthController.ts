@@ -1,5 +1,5 @@
-import { Response, NextFunction } from "express";
-import { AuthRequest, RegisterUserRequest } from "../types";
+import { Response, NextFunction, Request } from "express";
+import { RegisterUserRequest } from "../types";
 import { UserService } from "../services/UserService";
 import { Logger } from "winston";
 import { validationResult } from "express-validator";
@@ -84,7 +84,7 @@ export class AuthController {
       // Check if username (email) exists in database
       // Compare password
       // Generate tokens
-      // Add tokens to Cookies
+      // Add tokens to Cokkies
       // Return the response (id)
 
       const user = await this.userService.findByEmail(email);
@@ -131,26 +131,7 @@ export class AuthController {
       next(err);
     }
   }
-  async self(req: AuthRequest, res: Response) {
-    try {
-      console.log("User ID from JWT:", req.auth.sub); // ✅ Debug JWT payload
-
-      if (!req.auth.sub) {
-        return res
-          .status(401)
-          .json({ error: "Unauthorized: No user ID in token" });
-      }
-
-      const user = await this.userService.findById(Number(req.auth.sub));
-
-      if (!user) {
-        return res.status(404).json({ error: "User not found" }); // ✅ Handle missing user
-      }
-
-      res.json(user);
-    } catch (error) {
-      console.error("Error in self():", error); // ✅ Log server errors
-      res.status(500).json({ error: "Internal Server Error" });
-    }
+  async self(req: Request, res: Response) {
+    res.json({});
   }
 }

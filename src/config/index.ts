@@ -5,6 +5,8 @@ config({
   path: path.join(__dirname, `../../.env.${process.env.NODE_ENV || "dev"}`),
 });
 
+config({ path: path.join(__dirname, `../../.env.${process.env.NODE_ENV}`) });
+
 const {
   PORT,
   NODE_ENV,
@@ -14,7 +16,6 @@ const {
   DB_PASSWORD,
   DB_NAME,
   REFRESH_TOKEN_SECRET,
-  JWKS_URI,
 } = process.env;
 
 export const Config = {
@@ -26,5 +27,4 @@ export const Config = {
   DB_PASSWORD,
   DB_NAME,
   REFRESH_TOKEN_SECRET,
-  JWKS_URI,
 };

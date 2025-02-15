@@ -2,13 +2,10 @@ import "reflect-metadata";
 import logger from "./config/logger";
 import morgan from "morgan";
 import authRouter from "./routes/auth";
-import express, { Express, Request, Response } from "express";
+import express, { Express, NextFunction, Request, Response } from "express";
 import createHttpError from "http-errors";
-import cookieParser from "cookie-parser";
 
 const app: Express = express();
-
-app.use(cookieParser());
 
 app.use(express.json());
 
@@ -30,18 +27,19 @@ app.use((req, res, next) => {
 });
 
 // ✅ Error Handling Middleware (Fixes JSON Response Issue)
-interface CustomError extends Error {
-  status?: number;
-}
-app.use((err: CustomError, req: Request, res: Response) => {
-  const statusCode = err.status ?? 500; // Use optional chaining
-  const message = err.message || "Internal Server Error";
-
-  logger.error(`[${req.method}] ${req.url} - ${message}`);
-
-  res.status(statusCode).json({
-    error: message,
-  });
+app.use((err: unknown, req: Request, res: Response, next: NextFunction) => {
+  // Ensure error is properly typed
+  if (err instanceof Error) {
+    logger.error(err.message);
+    res.status((err as any).status || 500).json({
+      error: err.message || "Internal Server Error",
+    });
+  } else {
+    logger.error("An unknown error occurred");
+    res.status(500).json({
+      error: "Internal Server Error",
+    });
+  }
 });
 
 export default app;
