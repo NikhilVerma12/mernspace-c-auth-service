@@ -1,5 +1,5 @@
 export const Roles = {
-  ADMIN: "admin",
-  MANAGER: "Manager",
-  CUSTOMER: "customer",
+    CUSTOMER: 'customer',
+    ADMIN: 'admin',
+    MANAGER: 'manager',
 } as const;

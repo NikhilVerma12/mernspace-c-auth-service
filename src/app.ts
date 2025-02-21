@@ -1,44 +1,30 @@
-import "reflect-metadata";
-import logger from "./config/logger";
-import morgan from "morgan";
-import authRouter from "./routes/auth";
-import express, { Express, Request, Response } from "express";
-import createHttpError from "http-errors";
-import cookieParser from "cookie-parser";
-
-const app: Express = express();
-
-app.use(cookieParser());
-
+import 'reflect-metadata';
+import express, { NextFunction, Request, Response } from 'express';
+import logger from './config/logger';
+import cookieParser from 'cookie-parser';
+import { HttpError } from 'http-errors';
+import authRouter from './routes/auth';
+const app = express();
 app.use(express.json());
-
-// Add middleware
-app.use(morgan("dev"));
-
-// Routes
-app.get("/", (req, res) => {
-  res.send("Hello, World!");
+app.use(cookieParser());
+app.get('/', (req, res) => {
+    res.send('Welcome to Auth Service');
+});
+app.use('/auth', authRouter);
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.use((err: HttpError, req: Request, res: Response, next: NextFunction) => {
+    logger.error(err.message);
+    const statusCode = err.statusCode || 500;
+    res.status(statusCode).json({
+        errors: [
+            {
+                type: err.name,
+                msg: err.message,
+                path: '',
+                location: '',
+            },
+        ],
+    });
 });
 
-// Auth routes
-app.use("/auth", authRouter);
-
-// 404 Handler (Returns JSON Instead of Plain Text)
-app.use((req, res, next) => {
-  logger.error(`Invalid request: ${req.originalUrl}`);
-  next(createHttpError(404, "Invalid request"));
-});
-
-// ✅ Error Handling Middleware (Fixes JSON Response Issue)
-interface CustomError extends Error {
-  status?: number;
-}
-app.use((err: CustomError, req: Request, res: Response) => {
-  const statusCode = err.status ?? 500; // Use optional chaining
-  const message = err.message || "Internal Server Error";
-  logger.error(`[${req.method}] ${req.url} - ${message}`);
-  res.status(statusCode).json({
-    error: message,
-  });
-});
 export default app;
