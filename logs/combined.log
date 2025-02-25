@@ -20,3 +20,16 @@
 {"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-24T14:33:37.415Z"}
 {"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-24T14:33:45.610Z"}
 {"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-24T14:33:45.612Z"}
+{"level":"error","message":"","serviceName":"auth-service","timestamp":"2025-02-25T10:52:35.152Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T10:59:50.719Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T10:59:50.721Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T10:59:59.417Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T10:59:59.418Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T11:12:11.444Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T11:12:11.445Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T11:20:52.289Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T11:20:52.291Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T11:21:00.729Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T11:21:00.731Z"}
+{"level":"info","message":"Database connection established","serviceName":"auth-service","timestamp":"2025-02-25T11:23:28.900Z"}
+{"level":"info","message":"Listing on PORT 5501","serviceName":"auth-service","timestamp":"2025-02-25T11:23:28.902Z"}
